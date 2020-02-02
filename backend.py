@@ -39,39 +39,39 @@ def multipletwo(arr, key):
 
 
 def multiple(arr, key):
-    if len(arr) <= 2:
+    if len(arr) == 2:
         multipleone(arr, key)
     else:
         multipletwo(arr, key)
 
 
 def main(arr, key):
-    if key == 1:
+    if key == '1':
         print("name")
-        if len(arr) < 1:
+        if len(arr) == 1:
             onefile(arr, "name")
         else:
             multiple(arr, "name")
-    elif key == 2:
+    elif key == '2':
         print("email")
-        if len(arr) < 1:
+        if len(arr) == 1:
             onefile(arr, "email")
         else:
             multiple(arr, "email")
-    elif key == 3:
+    elif key == '3':
         print("number")
-        if len(arr) < 1:
+        if len(arr) == 1:
             onefile(arr, "number")
         else:
             multiple(arr, "number")
     else:
         print("company")
-        if len(arr) < 1:
+        if len(arr) == 1:
             onefile(arr, "company")
         else:
             multiple(arr, "company")
 
 
-cars = [1, 0]
-main(cars, 4)
+cars = [0,1,2]
+main(cars, 1)
 
